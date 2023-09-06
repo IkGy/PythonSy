@@ -1,7 +1,7 @@
-import keyword
-print(keyword.kwlist)
-# thisClass 클래스는 이런식으로 작성
-print(type("ddd"))
+# import keyword
+# print(keyword.kwlist)
+# # thisClass 클래스는 이런식으로 작성
+# print(type("ddd"))
 
 print(type(10000))
 print(type(False))

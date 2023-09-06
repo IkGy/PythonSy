@@ -1,2 +1,27 @@
 리스트 => 리스트 명 = [값1,값2] => list = [123,'문자열',False,True] 형식
   값 = 요소
+list[0] = 456 실행 후 list = [456,'문자열',False,True]
+리스트 + 리스트 는 합쳐진다 
+list1 = ["asdf",123432]
+list+list1 = sumList 
+sumList => [123,'문자열',False,True,"asdf",123432]
+print(len(sumList));
+list*3 => list 3번 반복
+
+list.append('값') => 리스트 뒤에 추가하기
+
+list.insert(위치(index),'값') => index값의 위치에 값을 추가하기
+
+list.extend([4,5,6]) => 값을 리스트에 각각의 요소로 추가하기
+==>[123, '문자열', False, True, 4, 5, 6]
+list.append([4,5,6]) => 리스트 자체를 추가
+==>[123, '문자열', False, True, [4, 5, 6]]
+
+del list[index] => index위치의 값을 삭제
+
+list.pop(index) => index위치의 값을 빼옴 index가 없으면 마지막에 추가된 값을 빼옴
+
+list.remove(값) => index 0번 부터 값으로 비교를 하고 삭제함
+
+값 in list => 값이 list에 있다면 True 없다면 False
+값 not in list => list에 값이 없다면 True 있다면 False

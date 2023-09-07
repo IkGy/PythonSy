@@ -88,8 +88,6 @@ print('b:', list(b))
 
 for i in reversed(a):
   print("",i);
-
-
 for i in b: - 실행X
   print("",i); 
 
@@ -125,3 +123,18 @@ NumList = [1,51,6,496,4165,4196,41]
 print(min(NumList));
 print(max(NumList));
 print(sum(NumList));
+
+alist = ['1번','2번','3번','4번']
+
+test = enumerate(alist)
+print('test : ', test)
+print('list(test)',list(test)) - 튜플 형태로 리스트가 바뀜 
+for idx, val in enumerate(alist):
+  print("{}번째 반복 값은 {}".format(idx,val))
+
+*튜플은 딕셔너리랑 다르게 수정이 불가
+
+test = list(range(0,30,1))
+alist = [i for i in test if i % 2 == 0]; - 리스트 내부에 조건으로 값 만들기
+
+print(alist)
